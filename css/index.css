@@ -125,7 +125,11 @@ header nav a{
 	.box-2{
 		display: none;
 	}
-	
+	.innovation{
+		width: 100%;
+		justify-content: center;
+		/* background-color: red; */
+	}
 	}
 
 hr{
@@ -133,7 +137,7 @@ hr{
 }
 
 .row-2 div {
-	width: 35%;
+	width: 50%;
 	margin: 2%;
 	padding: 5px;
 	/* background-color: greenyellow; */
@@ -146,30 +150,36 @@ justify-content: center;
 }
 .content-2{
 	justify-content: center;
-	margin: 10%;
+	/* margin: 0 20%; */
 	align-items: center;
+	width: 90%;
 }
 .content-1 img{
 	padding: 5px 0 0 0;
 	margin-top: 10%;
 }
 .row-3 div {
-	width: 30%;
+	width: 55%;
 	margin: 2%;
 	padding: 5px;
 	/* background-color: greenyellow; */
-	text-align: justify;
+	text-align: left;
 	justify-content: center;
+}
+
+.content-2 .middle-img {
+	align-items: center;
+	width: 100%;
 }
 .row-3 {
 	display: flex;
-	margin: 10%;
+	/* margin: 10%; */
 }
 .address {
 	/* background-color: greenyellow; */
 	/* display: flex; */
 	/* justify-content: center; */
-	margin-left: 10%;
+	/* margin-left: 10%; */
 	
 }
 #copyright {
