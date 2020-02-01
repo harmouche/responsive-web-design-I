@@ -1,3 +1,230 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+
+	width: 90%;
+	margin: auto;
+	/* border: 1px solid red; */
+}
+header {
+	/* background-color: yellow; */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+@media(max-width: 800px) {
+	header {
+		flex-direction: column-reverse;
+		height: 100px;
+		width: 100%;
+		}
+	.header nav{
+		width: 100%;
+		margin-top: 2%;
+	}
+}
+@media(max-width: 500px) {
+	header {
+		flex-direction: column-reverse;
+		height: 250px;
+		width: 100%;
+		border-bottom: 1px solid grey;
+	}
+	.header nav{
+		width: 100%;
+		margin-top: 2%;
+		flex-direction: column;
+	}
+	.header nav a{
+		border-bottom: 1px solid grey;
+		text-align: center;
+		height: 2em;
+		justify-content: center;
+	}
+
+}
+
+header nav{
+	/* background-color: red; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly; 
+	width: 70%;
+}
+header nav a{
+	text-decoration: none;
+	color: grey;
+}
+.header .logo {
+	/* border: 2px solid purple; */
+}
+.innovation{
+	/* background-color: red; */
+	width: 45%;
+	padding: 2%;
+	text-align: center;
+	font-size: 80px;
+}
+.box-2 {
+	display: flex;
+	/* border: 1px solid green; */
+	width: 45%;
+	justify-content: flex-end;
+}
+.content-1 {
+	/* border: 3px solid pink; */
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+}
+
+@media(max-width: 800px){
+	.box-2{
+		display: none;
+	}
+	.innovation{
+		width: 100%;
+		justify-content: center;
+		/* background-color: red; */
+	}
+	}
+
+hr{
+	width: 80%;
+}
+
+.row-2 div {
+	width: 50%;
+	margin: 2%;
+	padding: 5px;
+	/* background-color: greenyellow; */
+	text-align: justify;
+	justify-content: center;
+}
+.row-2 {
+display: flex;
+justify-content: center;
+}
+.content-2{
+	justify-content: center;
+	/* margin: 0 20%; */
+	align-items: center;
+	width: 90%;
+}
+.content-1 img{
+	padding: 5px 0 0 0;
+	margin-top: 10%;
+}
+.row-3 div {
+	width: 55%;
+	margin: 2%;
+	padding: 5px;
+	/* background-color: greenyellow; */
+	text-align: left;
+	justify-content: center;
+}
+
+.content-2 .middle-img {
+	align-items: center;
+	width: 100%;
+}
+.row-3 {
+	display: flex;
+	/* margin: 10%;
+}
+.address {
+	/* background-color: greenyellow; */
+	/* display: flex; */
+	/* justify-content: center; */
+	/* margin-left: 10%; */
+	
+}
+#copyright {
+	justify-content: center;
+	text-align: center;
+	
+} 
+
+@media (max-width: 500px) {
+	.row-2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.row-2 div {
+		display: flex;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	.row-3 {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.row-3 div {
+		width: auto;
+	}
+}
