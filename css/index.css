@@ -91,9 +91,10 @@ header {
 @media(max-width: 500px) {
 	header {
 		flex-direction: column-reverse;
-		height: 100px;
+		height: 250px;
 		width: 100%;
-		}
+		border-bottom: 1px solid grey;
+	}
 	.header nav{
 		width: 100%;
 		margin-top: 2%;
@@ -102,7 +103,8 @@ header {
 	.header nav a{
 		border-bottom: 1px solid grey;
 		text-align: center;
-		height: 2%;
+		height: 2em;
+		justify-content: center;
 	}
 
 }
@@ -191,9 +193,9 @@ justify-content: center;
 	align-items: center;
 	width: 100%;
 }
-/* .row-3 {
+.row-3 {
 	display: flex;
-	/* margin: 10%; */
+	/* margin: 10%;
 }
 .address {
 	/* background-color: greenyellow; */
@@ -206,6 +208,23 @@ justify-content: center;
 	justify-content: center;
 	text-align: center;
 	
-} */
+} 
 
-test
+@media (max-width: 500px) {
+	.row-2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.row-2 div {
+		display: flex;
+		flex-wrap: wrap;
+		width: auto;
+	}
+	.row-3 {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.row-3 div {
+		width: auto;
+	}
+}
